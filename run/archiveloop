@@ -21,6 +21,8 @@ then
   fi
 fi
 
+/root/bin/startup.sh
+
 # turning off hdmi saves a little bit of power
 /usr/bin/tvservice -o
 
