@@ -299,7 +299,7 @@ function configure_sns () {
     if [ -n "${sns_enabled+x}" ]
     then
         log_progress "Enabling SNS"
-        mkdir /root/.aws
+        mkdir -p /root/.aws
 
         echo "[default]" > /root/.aws/credentials
         echo "aws_access_key_id = $aws_access_key_id" >> /root/.aws/credentials
